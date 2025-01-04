@@ -3,7 +3,7 @@
     <title>matt williams</title>
     <link href="https://mattwilliams-ds.github.io/gh-page/feed.xml" rel="self" />
     <link href="https://mattwilliams-ds.github.io/gh-page" />
-    <updated>2025-01-04T14:29:31-07:00</updated>
+    <updated>2025-01-04T15:14:11-07:00</updated>
     <author>
         <name>Matt Williams</name>
     </author>
@@ -116,7 +116,7 @@
 <li>Record all data on the laptop to a CSV file for post processing.</li>
 </ol>
 <p><strong>Resuts</strong></p>
-<p>This sensor network developed for this project worked as intended. Using try/except clauses I was able to make the network self-healing. Whenever a node dropped off the network, it would restart the communication protocol to locate the node it is supposed to report to. The MicroPython, Arduino, nd serial listening scripts are available on Github here. Also, check out a demonstration of the network below.</p>
+<p>This sensor network developed for this project worked as intended. Using try/except clauses I was able to make the network self-healing. Whenever a node dropped off the network, it would restart the communication protocol to locate the node it is supposed to report to. The MicroPython, Arduino, nd serial listening scripts are <a href="https://github.com/mattwilliams-ds/sensor-network" target="_blank" rel="noopener noreferrer">available on Github here</a>. Also, check out a demonstration of the network below.</p>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/Yaj0-c3g5m0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
             ]]>
         </content>

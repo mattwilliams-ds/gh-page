@@ -3,12 +3,58 @@
     <title>matt williams</title>
     <link href="https://mattwilliams-ds.github.io/gh-page/feed.xml" rel="self" />
     <link href="https://mattwilliams-ds.github.io/gh-page" />
-    <updated>2025-01-04T15:14:11-07:00</updated>
+    <updated>2025-01-05T09:59:03-07:00</updated>
     <author>
         <name>Matt Williams</name>
     </author>
     <id>https://mattwilliams-ds.github.io/gh-page</id>
 
+    <entry>
+        <title>Predicting Concrete Strength</title>
+        <author>
+            <name>Matt Williams</name>
+        </author>
+        <link href="https://mattwilliams-ds.github.io/gh-page/predicting-concrete-strength/"/>
+        <id>https://mattwilliams-ds.github.io/gh-page/predicting-concrete-strength/</id>
+            <category term="Projects"/>
+
+        <updated>2025-01-05T09:25:27-07:00</updated>
+            <summary>
+                <![CDATA[
+                    Concept This project is an extension to my project titled Effects of Concrete Mix Design &amp; Aging on Strength. Here, I sought to develop a machine learning model that could predict the 28 day concrete breaking strength based on the sample's mix design. I used&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><strong>Concept</strong></p>
+<p>This project is an extension to my project titled <a href="https://mattwilliams-ds.github.io/gh-page/effects-of-concrete-mix-design-and-aging-on-strength/" title="effects of concrete mix on strength" target="_blank" rel="noopener noreferrer">Effects of Concrete Mix Design &amp; Aging on Strength</a>. Here, I sought to develop a machine learning model that could predict the 28 day concrete breaking strength based on the sample's mix design. I used a linear regression model as well as a k-nearest neighbors (kNN) model to predict concete strengths.</p>
+<p><strong>Data</strong></p>
+<p><a href="https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength" title="UC Irvine concrete compressive data" target="_blank" rel="noopener noreferrer">Concrete Compressive Strength [creative commons] from UC Irvine</a></p>
+<p><strong>Process</strong></p>
+<ol>
+<li>Read data into a <strong>Pandas</strong> dataframe.</li>
+<li>Look for &amp; remove records with missing data.</li>
+<li>Explore the relationship of the mix ingredients using a <strong>seaborn</strong> correlation matrix and pair plots.</li>
+<li>Isolate records for 28 day breaks.</li>
+<li>Split the data 85% for training and 15% for testing.</li>
+<li>Train &amp; test <strong>scikit-learn</strong> linear regression model.</li>
+<li>Run a loop with various k values to score <strong>scikit-learn</strong> kNN models &amp; select an appropriate k value.</li>
+<li>Test the kNN model.</li>
+<li>Repeat steps 4-7 including the initial breaking strength and age of initial break.</li>
+</ol>
+<p><strong>Results</strong></p>
+<p>The correlation matrix (shown here) highlighted several interesting relationships. Most notably is the negative correlation between water and the superplasticizer additive. Second to that, the cement content and concrete strength showed a positive correlation.</p>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/8/Screenshot-from-2025-01-05-09-50-15.png" alt="seaborn correlation matrix plot" width="600" height="492" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-2xl.png 1920w"></figure>
+<p>After exploring the data a bit, I initially tried the linear regression and a k-nearest neighbors based on solely the mix ingredient concentrations for all 28 day breaks. The results were not spectacular with r<sup>2</sup> values of 0.78 and 0.77 respectively. I then changed my approach and in addition to the mix concentrations, I also included the initial breaking strength and the age of the sample at the first test break for the same mix.</p>
+<p>This produced better results, improving model performance to r<sup>2</sup> values of 0.88 and 0.87, and is a more useful model, in my opinion. A model like this could be used by concrete batch plants to get an idea of whether the mix they have used will hit the 28 day strength required by the construction project specifications.</p>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/8/Screenshot-from-2025-01-05-09-53-39-3.png" alt="Predicted vs Actual 28 Day Breaking Strength" width="560" height="568" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-2xl.png 1920w"></figure>
+<figcaption >Results for linear regression model including initial concrete breaking strength and age.</figcaption>
+</figure>
+<p>The r<sup>2</sup> values could be further improved by using a larger data set, which a batch plant would likely have on hand in the records of their previous concrete mixes and sample tests. In the data set used for this analysis only 182 records with 28 day breaks also included a break prior to 28 days so the sample size is quite small. </p>
+<p>Check out the entire project <a href="https://colab.research.google.com/drive/1bcAio17m__zbJOQGmOF5qM6oDf0RPT9t?usp=sharing" title="predicting concrete strength notebook" target="_blank" rel="noopener noreferrer">Colab Notebook</a> for more information.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Effects of Concrete Mix Design &amp; Aging on Strength</title>
         <author>
@@ -116,7 +162,7 @@
 <li>Record all data on the laptop to a CSV file for post processing.</li>
 </ol>
 <p><strong>Resuts</strong></p>
-<p>This sensor network developed for this project worked as intended. Using try/except clauses I was able to make the network self-healing. Whenever a node dropped off the network, it would restart the communication protocol to locate the node it is supposed to report to. The MicroPython, Arduino, nd serial listening scripts are <a href="https://github.com/mattwilliams-ds/sensor-network" target="_blank" rel="noopener noreferrer">available on Github here</a>. Also, check out a demonstration of the network below.</p>
+<p>This sensor network developed for this project worked as intended. Using try/except clauses I was able to make the network self-healing. Whenever a node dropped off the network, it would restart the communication protocol to locate the node it is supposed to report to. The MicroPython, Arduino, and serial listening scripts are <a href="https://github.com/mattwilliams-ds/sensor-network" target="_blank" rel="noopener noreferrer">available on Github here</a>. Also, check out a demonstration of the network below.</p>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/Yaj0-c3g5m0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
             ]]>
         </content>

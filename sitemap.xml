@@ -6,7 +6,7 @@
 </url>
 <url>
 <loc>https://mattwilliams-ds.github.io/gh-page/about-me/</loc>
-<lastmod>2024-12-31T16:14:14-07:00</lastmod>
+<lastmod>2025-01-05T10:09:10-07:00</lastmod>
 <image:image>
 <image:loc>https://mattwilliams-ds.github.io/gh-page/media/posts/1/mw2023-3.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -56,8 +56,20 @@
 <loc>https://mattwilliams-ds.github.io/gh-page/page/2/</loc>
 </url>
 <url>
+<loc>https://mattwilliams-ds.github.io/gh-page/patterns-in-structurally-deficient-bridges/</loc>
+<lastmod>2025-01-11T14:12:43-07:00</lastmod>
+<image:image>
+<image:loc>https://mattwilliams-ds.github.io/gh-page/media/posts/9/bridge_rating_categorization.png</image:loc>
+<image:title><![CDATA[Bridge Rating Categorization]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://mattwilliams-ds.github.io/gh-page/media/posts/9/poor_structural_elements-2.png</image:loc>
+<image:title><![CDATA[Structural systems in poor conditions.]]></image:title>
+</image:image>
+</url>
+<url>
 <loc>https://mattwilliams-ds.github.io/gh-page/predicting-concrete-strength/</loc>
-<lastmod>2025-01-05T09:59:03-07:00</lastmod>
+<lastmod>2025-01-05T10:05:08-07:00</lastmod>
 <image:image>
 <image:loc>https://mattwilliams-ds.github.io/gh-page/media/posts/8/Screenshot-from-2025-01-05-09-50-15.png</image:loc>
 <image:title><![CDATA[seaborn correlation matrix plot]]></image:title>

@@ -3,7 +3,7 @@
     <title>matt williams</title>
     <link href="https://mattwilliams-ds.github.io/gh-page/feed.xml" rel="self" />
     <link href="https://mattwilliams-ds.github.io/gh-page" />
-    <updated>2025-01-11T14:12:43-07:00</updated>
+    <updated>2025-01-17T05:47:56-07:00</updated>
     <author>
         <name>Matt Williams</name>
     </author>
@@ -363,7 +363,7 @@
 <li>Perform a correlation analysis using the "pairs" function in the praznik library to see how the pollutants relate to one another.</li>
 <li>Factor records by county, AQI readings as either high or low based on guidance from Airnow.gov, and the season based on when the readings were taken.</li>
 <li>Use the apriori library to discern association rules. The resulting rules show when each pollutant is generally high or low throughout the year.</li>
-<li>Use the silhouette method to determine best number of clusters (2 in this case) for performing a k-means clustering analysis.<figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/2/adamsSilhouette.png" alt="" width="300" height="214" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-2xl.png 1920w"></figure></li>
+<li>Use the silhouette method to determine best number of clusters (2 in this case) for performing a k-means clustering analysis.<figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/2/adamsSilhouette.png" alt="" width="500" height="356" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-2xl.png 1920w"></figure></li>
 <li>Perform k-means clustering on AQI values for each day of observations in the dataset</li>
 <li>Count the number of times each cluster occurs by month.</li>
 </ol>
@@ -374,6 +374,7 @@
 <p>Cluster distribution in Adam's County by month:</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/2/adamsClusters2.png" alt="" width="810" height="458" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-2xl.png 1920w"></figure>
 <p>The mean pollutant values show that ozone is highest in cluster 1, when nitrogen dioxide is low. The distribution plot shows cluster 1 making up the majority of days during summer months. Then in winter, cluster 2 becomes dominant. Thus, ozone is highest in the summer when it gets hotter. When it temperatures cool off ozone levels go down and nitrogen dioxide levels are higher.</p>
+<p>Here is my R code for this project on <a href="https://github.com/mattwilliams-ds/colorado-air-pollution" title="Colorado Air Quality" target="_blank" rel="noopener noreferrer">github</a>.</p>
             ]]>
         </content>
     </entry>

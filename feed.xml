@@ -3,7 +3,7 @@
     <title>matt williams</title>
     <link href="https://mattwilliams-ds.github.io/gh-page/feed.xml" rel="self" />
     <link href="https://mattwilliams-ds.github.io/gh-page" />
-    <updated>2025-03-04T18:29:53-07:00</updated>
+    <updated>2025-03-07T12:06:39-07:00</updated>
     <author>
         <name>Matt Williams</name>
     </author>
@@ -16,8 +16,8 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/sales-analytics-using-sql/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/sales-analytics-using-sql/</id>
-            <category term="Projects"/>
             <category term="Business Intelligence"/>
+            <category term="All Projects"/>
 
         <updated>2025-03-02T06:51:11-07:00</updated>
             <summary>
@@ -64,7 +64,8 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/vulnerability-study-of-coastal-bridges/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/vulnerability-study-of-coastal-bridges/</id>
-            <category term="Projects"/>
+            <category term="Engineering"/>
+            <category term="All Projects"/>
 
         <updated>2025-01-19T13:13:22-07:00</updated>
             <summary>
@@ -142,7 +143,8 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/patterns-in-structurally-deficient-bridges/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/patterns-in-structurally-deficient-bridges/</id>
-            <category term="Projects"/>
+            <category term="Engineering"/>
+            <category term="All Projects"/>
 
         <updated>2025-01-11T13:50:40-07:00</updated>
             <summary>
@@ -227,7 +229,8 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/predicting-concrete-strength/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/predicting-concrete-strength/</id>
-            <category term="Projects"/>
+            <category term="Engineering"/>
+            <category term="All Projects"/>
 
         <updated>2025-01-05T09:25:27-07:00</updated>
             <summary>
@@ -273,7 +276,8 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/effects-of-concrete-mix-design-and-aging-on-strength/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/effects-of-concrete-mix-design-and-aging-on-strength/</id>
-            <category term="Projects"/>
+            <category term="Engineering"/>
+            <category term="All Projects"/>
 
         <updated>2025-01-04T09:08:24-07:00</updated>
             <summary>
@@ -311,7 +315,7 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/tornadoes-in-tableau/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/tornadoes-in-tableau/</id>
-            <category term="Projects"/>
+            <category term="All Projects"/>
 
         <updated>2025-01-03T07:00:08-07:00</updated>
             <summary>
@@ -345,7 +349,7 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/wireless-sensor-network/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/wireless-sensor-network/</id>
-            <category term="Projects"/>
+            <category term="All Projects"/>
 
         <updated>2025-01-01T11:36:40-07:00</updated>
             <summary>
@@ -385,7 +389,7 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/exoplanets-and-space-telescopes/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/exoplanets-and-space-telescopes/</id>
-            <category term="Projects"/>
+            <category term="All Projects"/>
 
         <updated>2025-01-01T08:03:59-07:00</updated>
             <summary>
@@ -425,7 +429,7 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/assessing-homebuyers-risk/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/assessing-homebuyers-risk/</id>
-            <category term="Projects"/>
+            <category term="All Projects"/>
 
         <updated>2024-12-31T15:43:33-07:00</updated>
             <summary>
@@ -466,7 +470,7 @@
         </author>
         <link href="https://mattwilliams-ds.github.io/gh-page/air-quality-in-colorado/"/>
         <id>https://mattwilliams-ds.github.io/gh-page/air-quality-in-colorado/</id>
-            <category term="Projects"/>
+            <category term="All Projects"/>
 
         <updated>2024-12-31T07:50:44-07:00</updated>
             <summary>

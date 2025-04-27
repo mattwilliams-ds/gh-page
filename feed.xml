@@ -3,7 +3,7 @@
     <title>matt williams</title>
     <link href="https://mattwilliams-ds.github.io/gh-page/feed.xml" rel="self" />
     <link href="https://mattwilliams-ds.github.io/gh-page" />
-    <updated>2025-04-23T06:02:12-06:00</updated>
+    <updated>2025-04-27T09:43:53-06:00</updated>
     <author>
         <name>Matt Williams</name>
     </author>
@@ -300,7 +300,7 @@
 <p>Below are the box plots showing the ranges of mix component concentration from low strength to high strength concrete strengths, all at 28 days.</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/7//Screenshot-from-2025-01-04-09-07-03.png" alt="Box Plots of Concrete Mix Designs" width="1000" height="428" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-2xl.png 1920w"></figure>
 <p>While there is a lot of information in the box plots above it is the level of detail a structural engineer would like to see.  Going by component, the cement content increases with strength. This makes sense as cement is the binding agent that holds the aggregates together. As the cement content increases it displaces and thus reduces the aggregate content. Finally, the water content descreases slightly while superplasticizers increased. This too makes sense as superplasticizers are used to reduce the amount of water in the mix while maintaining the ability to work and consolidate the concrete.</p>
-<p>The entire project can be viewed in this <a href="https://drive.google.com/file/d/1gwA8R5vjOfh__89Og_c6CyTE0Oba2PLv/view?usp=sharing" target="_blank" rel="noopener noreferrer">Colab Notebook</a>. It also includes some additional analysis to understand strength gains after 28 days as well. The study found that, on average, concrete strength increases by 21% from day 28 to day 365. Again, this is not generally relied upon in design but is useful to know as it provides an additional factor of safety on the design.</p>
+<p>The Jupyter Notebook can be viewed <a href="https://github.com/mattwilliams-ds/Data_Science_Projects/blob/main/concrete_mix_aging/MWilliams_Concrete_Strength.ipynb" title="link to concrete mix ingredient project" target="_blank" rel="noopener noreferrer">here on github</a>. It also includes some additional analysis to understand strength gains after 28 days as well. The study found that, on average, concrete strength increases by 21% from day 28 to day 365. Again, this is not generally relied upon in design but is useful to know as it provides an additional factor of safety on the design.</p>
             ]]>
         </content>
     </entry>

@@ -72,14 +72,14 @@
 </url>
 <url>
 <loc>https://mattwilliams-ds.github.io/gh-page/predicting-concrete-strength/</loc>
-<lastmod>2025-03-07T12:06:24-07:00</lastmod>
+<lastmod>2025-11-29T11:19:31-07:00</lastmod>
 <image:image>
 <image:loc>https://mattwilliams-ds.github.io/gh-page/media/posts/8/Screenshot-from-2025-01-05-09-50-15.png</image:loc>
 <image:title><![CDATA[seaborn correlation matrix plot]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://mattwilliams-ds.github.io/gh-page/media/posts/8/Screenshot-from-2025-01-05-09-53-39-3.png</image:loc>
-<image:title><![CDATA[Predicted vs Actual 28 Day Breaking Strength]]></image:title>
+<image:loc>https://mattwilliams-ds.github.io/gh-page/media/posts/8/predicting_conc_strength.png</image:loc>
+<image:title><![CDATA[Actual vs Predicted Concrete Strength]]></image:title>
 </image:image>
 </url>
 <url>

@@ -3,12 +3,49 @@
     <title>matt williams</title>
     <link href="https://mattwilliams-ds.github.io/gh-page/feed.xml" rel="self" />
     <link href="https://mattwilliams-ds.github.io/gh-page" />
-    <updated>2025-04-27T09:43:53-06:00</updated>
+    <updated>2025-11-29T10:51:47-07:00</updated>
     <author>
         <name>Matt Williams</name>
     </author>
     <id>https://mattwilliams-ds.github.io/gh-page</id>
 
+    <entry>
+        <title>Vehicle Crash Density Map</title>
+        <author>
+            <name>Matt Williams</name>
+        </author>
+        <link href="https://mattwilliams-ds.github.io/gh-page/vehicle-crash-density-map/"/>
+        <id>https://mattwilliams-ds.github.io/gh-page/vehicle-crash-density-map/</id>
+
+        <updated>2025-11-29T08:03:59-07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Concept After being rear-ended in a car accident, I wanted to analyze which intersections in the town where the accident occurred have experienced the highest number of car accidents over the past four years. Data Colorado Department of Transportation Crash Data Process Results Here is&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><strong>Concept</strong></p>
+<p>After being rear-ended in a car accident, I wanted to analyze which intersections in the town where the accident occurred have experienced the highest number of car accidents over the past four years.</p>
+<p><strong>Data</strong></p>
+<p><a href="https://www.codot.gov/safety/traffic-safety/data-analysis/crash-data" title="CDOT Crash Data" target="_blank" rel="noopener noreferrer">Colorado Department of Transportation Crash Data</a></p>
+<p><strong>Process</strong></p>
+<ol>
+<li>Import crash data to a <strong>Pandas</strong> DataFrame for 2021 through 2024.</li>
+<li>Concatenate all crash data.</li>
+<li>Clean data &amp; standardizing street names.</li>
+<li>Create a single column containing both cross-streets for each accident.</li>
+<li>Use the <strong>Google Maps API</strong> to geocode all intersections.</li>
+<li>Export intersections and accident count data to a CSV &amp; import as a <strong>SQL</strong> database.</li>
+<li>Write a <a href="https://github.com/mattwilliams-ds/Data_Science_Projects/blob/main/longmont_accidents/longmont_crashes.sql" title="SQL query" target="_blank" rel="noopener noreferrer">SQL query</a> to compile a list of intersections and accident counts.</li>
+<li>Use <strong>QGIS</strong> to create a map of the intersections with the highest accident counts.</li>
+</ol>
+<p><strong>Results</strong></p>
+<p>Here is the map I created of the twenty intersections with the highest accident counts. And, yes, the intersection where my accident occured made the top twenty.</p>
+<figure class="post__image"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/12/Longmont_Crash_Density.png" alt="Crash Density Map of Longmont, Colorado" width="1166" height="1078" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-2xl.png 1920w"></figure>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Sales Analytics using SQL</title>
         <author>
@@ -20,7 +57,7 @@
             <category term="All Projects"/>
 
         <updated>2025-03-02T06:51:11-07:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Concept Using company sales data and SQLite, I set out to determine the following: Data Sample Sales Data on Kaggle Process Results Exploring the sales data and developing SQL queries in DB Browser was very straight forward. The most challenging query invovled calculating the average&hellip;
                 ]]>
@@ -68,7 +105,7 @@
             <category term="All Projects"/>
 
         <updated>2025-01-19T13:13:22-07:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Concept This project sought to develop a system of rating coastal counties in the U.S. by the vulnerability of their bridge infrastructure. The scoring system developed awards one level or risk for each of the following factors: By identifying coastal counties with at risk bridge&hellip;
                 ]]>
@@ -132,7 +169,7 @@
 </tr>
 </tbody>
 </table>
-<p>The collection of scripts developed in the course of this project are available <a href="https://github.com/mattwilliams-ds/Data_Science_Projects/tree/main/bridge_vulnerability" title="Bridge Vulnerability Study" target="_blank" rel="noopener noreferrer">here on github</a>. A full report on the project is also <a href="https://drive.google.com/file/d/1Co_J1ejcm1PjDSXzqr7fspOCN_hlEUKl/view?usp=drive_link" title="Bridge Vulnerability Report" target="_blank" rel="noopener noreferrer">available here</a>.</p>
+<p>The collection of scripts developed in the course of this project are available <a href="https://github.com/mattwilliams-ds/coastal_bridges" title="Bridge Vulnerability Study" target="_blank" rel="noopener noreferrer">here on github</a>. A full report on the project is also <a href="https://drive.google.com/file/d/1Co_J1ejcm1PjDSXzqr7fspOCN_hlEUKl/view?usp=drive_link" title="Bridge Vulnerability Report" target="_blank" rel="noopener noreferrer">available here</a>.</p>
             ]]>
         </content>
     </entry>
@@ -147,7 +184,7 @@
             <category term="All Projects"/>
 
         <updated>2025-01-11T13:50:40-07:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Concept The impetus of this project was to identify common traits among structurally deficient bridges in the United States. To do this, FHWA's National Bridge Inventory was analyzed with the FPGrowth algorithm which is commonly used for finding patterns in retail shopping carts. Applying FPGrowth&hellip;
                 ]]>
@@ -233,15 +270,15 @@
             <category term="All Projects"/>
 
         <updated>2025-01-05T09:25:27-07:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
-                    Concept This project is an extension to my project titled Effects of Concrete Mix Design &amp; Aging on Strength. Here, I sought to develop a machine learning model that could predict the 28 day concrete breaking strength based on the sample's mix design. I tested&hellip;
+                    Concept This project is an extension to my project titled Effects of Concrete Mix Design &amp; Aging on Strength. Here, I sought to develop a machine learning model that could predict the 28 day concrete breaking strength based on the sample's mix design. I used&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p><strong>Concept</strong></p>
-<p>This project is an extension to my project titled <a href="https://mattwilliams-ds.github.io/gh-page/effects-of-concrete-mix-design-and-aging-on-strength/" title="effects of concrete mix on strength" target="_blank" rel="noopener noreferrer">Effects of Concrete Mix Design &amp; Aging on Strength</a>. Here, I sought to develop a machine learning model that could predict the 28 day concrete breaking strength based on the sample's mix design. I tested several machine learning algorithms and found that a random forest model resulted in the most accurate strength predictions.</p>
+<p>This project is an extension to my project titled <a href="https://mattwilliams-ds.github.io/gh-page/effects-of-concrete-mix-design-and-aging-on-strength/" title="effects of concrete mix on strength" target="_blank" rel="noopener noreferrer">Effects of Concrete Mix Design &amp; Aging on Strength</a>. Here, I sought to develop a machine learning model that could predict the 28 day concrete breaking strength based on the sample's mix design. I used a linear regression model as well as a k-nearest neighbors (kNN) model to predict concete strengths.</p>
 <p><strong>Data</strong></p>
 <p><a href="https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength" title="UC Irvine concrete compressive data" target="_blank" rel="noopener noreferrer">Concrete Compressive Strength [creative commons] from UC Irvine</a></p>
 <p><strong>Process</strong></p>
@@ -249,19 +286,23 @@
 <li>Read data into a <strong>Pandas</strong> dataframe.</li>
 <li>Look for &amp; remove records with missing data.</li>
 <li>Explore the relationship of the mix ingredients using a <strong>seaborn</strong> correlation matrix and pair plots.</li>
-<li>Remove records with outlier attribute values.</li>
-<li>Split the data 80% for training and 20% for testing.</li>
-<li>Create a scaled copy of the data for the ML models that require it.</li>
-<li>Train &amp; test <strong>scikit-learn</strong> machine learning models.</li>
-<li>Compare model performance.</li>
-<li>Tune model performance of top two performing models (Random Forest &amp; MLP) by doing feature selection and hyperparameter tuning.</li>
+<li>Isolate records for 28 day breaks.</li>
+<li>Split the data 85% for training and 15% for testing.</li>
+<li>Train &amp; test <strong>scikit-learn</strong> linear regression model.</li>
+<li>Run a loop with various k values to score <strong>scikit-learn</strong> kNN models &amp; select an appropriate k value.</li>
+<li>Test the kNN model.</li>
+<li>Repeat steps 4-8 including the initial breaking strength and age of initial break.</li>
 </ol>
 <p><strong>Results</strong></p>
 <p>The correlation matrix (shown here) highlighted several interesting relationships. Most notably is the negative correlation between water and the superplasticizer additive. Second to that, the cement content and concrete strength showed a positive correlation.</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/8/Screenshot-from-2025-01-05-09-50-15.png" alt="seaborn correlation matrix plot" width="600" height="492" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-50-15-2xl.png 1920w"></figure>
-<p>The best performing model was the random forest model which produced a model score of 0.89. A plot of the predicted and actual breaking strengths from the random forest model is shown here.</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/8/Screenshot-2025-04-23-055807.png" alt="Random Forest Model Performance" width="400" height="392" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-2025-04-23-055807-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-2025-04-23-055807-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-2025-04-23-055807-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-2025-04-23-055807-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-2025-04-23-055807-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-2025-04-23-055807-2xl.png 1920w"></figure>
-<p><a href="https://github.com/mattwilliams-ds/Data_Science_Projects/blob/main/predicting_concrete_strength/Predicting_Concrete_Strength.ipynb" title="github link" target="_blank" rel="noopener noreferrer">See notebook on github</a>.</p>
+<p>After exploring the data a bit, I initially tried the linear regression and a k-nearest neighbors based on solely the mix ingredient concentrations for all 28 day breaks. The results were not spectacular with r<sup>2</sup> values of 0.78 and 0.77 respectively. I then changed my approach and in addition to the mix concentrations, I also included the initial breaking strength and the age of the sample at the first test break for the same mix.</p>
+<p>This produced better results, improving model performance to r<sup>2</sup> values of 0.88 and 0.87, and is a more useful model, in my opinion. A model like this could be used by concrete batch plants to get an idea of whether the mix they have used will hit the 28 day strength required by the construction project specifications.</p>
+<figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/8/Screenshot-from-2025-01-05-09-53-39-3.png" alt="Predicted vs Actual 28 Day Breaking Strength" width="560" height="568" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/8/responsive/Screenshot-from-2025-01-05-09-53-39-3-2xl.png 1920w"></figure>
+<figcaption >Results for linear regression model including initial concrete breaking strength and age.</figcaption>
+</figure>
+<p>The r<sup>2</sup> values could be further improved by using a larger data set, which a batch plant would likely have on hand in the records of their previous concrete mixes and sample tests. In the data set used for this analysis only 182 records with 28 day breaks also included a break prior to 28 days so the sample size is quite small. </p>
+<p>Check out the entire project <a href="https://colab.research.google.com/drive/1bcAio17m__zbJOQGmOF5qM6oDf0RPT9t?usp=sharing" title="predicting concrete strength notebook" target="_blank" rel="noopener noreferrer">Colab Notebook</a> for more information.</p>
             ]]>
         </content>
     </entry>
@@ -276,7 +317,7 @@
             <category term="All Projects"/>
 
         <updated>2025-01-04T09:08:24-07:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Concept Construction industries the world over favor different strength concretes for different applications. This project seeks to discern patterns in concrete mix component concentrations for low, medium, and high strength concretes. The dataset includes breaking strengths for just over 1,000 samples, their mix design, and the&hellip;
                 ]]>
@@ -300,7 +341,7 @@
 <p>Below are the box plots showing the ranges of mix component concentration from low strength to high strength concrete strengths, all at 28 days.</p>
 <figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/7//Screenshot-from-2025-01-04-09-07-03.png" alt="Box Plots of Concrete Mix Designs" width="1000" height="428" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/7//responsive/Screenshot-from-2025-01-04-09-07-03-2xl.png 1920w"></figure>
 <p>While there is a lot of information in the box plots above it is the level of detail a structural engineer would like to see.  Going by component, the cement content increases with strength. This makes sense as cement is the binding agent that holds the aggregates together. As the cement content increases it displaces and thus reduces the aggregate content. Finally, the water content descreases slightly while superplasticizers increased. This too makes sense as superplasticizers are used to reduce the amount of water in the mix while maintaining the ability to work and consolidate the concrete.</p>
-<p>The Jupyter Notebook can be viewed <a href="https://github.com/mattwilliams-ds/Data_Science_Projects/blob/main/concrete_mix_aging/MWilliams_Concrete_Strength.ipynb" title="link to concrete mix ingredient project" target="_blank" rel="noopener noreferrer">here on github</a>. It also includes some additional analysis to understand strength gains after 28 days as well. The study found that, on average, concrete strength increases by 21% from day 28 to day 365. Again, this is not generally relied upon in design but is useful to know as it provides an additional factor of safety on the design.</p>
+<p>The entire project can be viewed in this <a href="https://drive.google.com/file/d/1gwA8R5vjOfh__89Og_c6CyTE0Oba2PLv/view?usp=sharing" target="_blank" rel="noopener noreferrer">Colab Notebook</a>. It also includes some additional analysis to understand strength gains after 28 days as well. The study found that, on average, concrete strength increases by 21% from day 28 to day 365. Again, this is not generally relied upon in design but is useful to know as it provides an additional factor of safety on the design.</p>
             ]]>
         </content>
     </entry>
@@ -314,7 +355,7 @@
             <category term="All Projects"/>
 
         <updated>2025-01-03T07:00:08-07:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Concept This project was done as part of a data visualization class. My goal with this project was to create dashboards and visualizations in Tableau to show the recent history and impact of tornadoes in the United States. Data NOAA's Storm Events Database Process Results&hellip;
                 ]]>
@@ -348,7 +389,7 @@
             <category term="All Projects"/>
 
         <updated>2025-01-01T11:36:40-07:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Concept An Arduino Uno was used to run a sensor for collecting ambient temperature and humidty readings as well. This data was also output to a serial port that fed into a laptop. Hardware Process Resuts This sensor network developed for this project worked as&hellip;
                 ]]>
@@ -388,7 +429,7 @@
             <category term="All Projects"/>
 
         <updated>2025-01-01T08:03:59-07:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Concept This was an exploratory project that sought to synthesize the search for exoplanets by looking at the planets discovered, their size, and their distance from earth as well as the telescope facilities used to search for exoplanets. The project involves performing statistical analyses on&hellip;
                 ]]>
@@ -428,7 +469,7 @@
             <category term="All Projects"/>
 
         <updated>2024-12-31T15:43:33-07:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     A web application for evaluating property risks in Boulder County, Colorado. Concept The web map, created with ESRI's ArcGIS Web Application, allows homebuyers and residents to locate a property and see nearby risks including fracking wells, FEMA flood zones, Metro taxing district boundaries, as well&hellip;
                 ]]>
@@ -456,50 +497,6 @@
 </ol>
 <p><strong>Results</strong></p>
 <p>The final product was an ArcGIS Web Application hosted at ESRI.  Access the web application, <a href="https://ums.maps.arcgis.com/apps/webappviewer/index.html?id=fbd9b3af41264143aa576135ac56e41e" title="ArcGIS Web Application" target="_blank" rel="noopener noreferrer">here</a>.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Air Quality in Colorado</title>
-        <author>
-            <name>Matt Williams</name>
-        </author>
-        <link href="https://mattwilliams-ds.github.io/gh-page/air-quality-in-colorado/"/>
-        <id>https://mattwilliams-ds.github.io/gh-page/air-quality-in-colorado/</id>
-            <category term="All Projects"/>
-
-        <updated>2024-12-31T07:50:44-07:00</updated>
-            <summary>
-                <![CDATA[
-                    Concept This project sought to shed light on how air quality varies in Colorado over space and time. The goal was to perform statistical and machine learning analyses on air quality data from both mountainous regions and what we locally call the "Front Range" which&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p><strong>Concept</strong></p>
-<p>This project sought to shed light on how air quality varies in Colorado over space and time. The goal was to perform statistical and machine learning analyses on air quality data from both mountainous regions and what we locally call the "Front Range" which is the urban region on the east foothills of the Rocky Mountains.</p>
-<p>Unfortunately, the only air quality monitor in the mountains was only active for a few years and was only intermitently functional when it was active.  Thus, the project pivotted to understanding how the Front Range air quality varies throughout the year.</p>
-<p><strong>Data</strong></p>
-<p>The dataset used for this project included 6 hour mean &amp; max particle measurements and 6 hour Air Quality Index (AQI) values for four air pollutants including nitrogen dioxide, carbon monoxide, sulfur dioxide, and ozone. There were 35,000 observations from Colorado taken at three different locations.</p>
-<p><strong>Process</strong></p>
-<p>Using <strong>R</strong>, the following process was used to understand the relationship of the pollutants to one another and how they vary with time:</p>
-<ol>
-<li>Clean data by removing observations from outside of Colorado.</li>
-<li>Perform a correlation analysis using the "pairs" function in the praznik library to see how the pollutants relate to one another.</li>
-<li>Factor records by county, AQI readings as either high or low based on guidance from Airnow.gov, and the season based on when the readings were taken.</li>
-<li>Use the apriori library to discern association rules. The resulting rules show when each pollutant is generally high or low throughout the year.</li>
-<li>Use the silhouette method to determine best number of clusters (2 in this case) for performing a k-means clustering analysis.<figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/2/adamsSilhouette.png" alt="" width="500" height="356" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsSilhouette-2xl.png 1920w"></figure></li>
-<li>Perform k-means clustering on AQI values for each day of observations in the dataset</li>
-<li>Count the number of times each cluster occurs by month.</li>
-</ol>
-<p><strong>Results</strong></p>
-<p>The three analyses performed each confirmed the relationships of the pollutants to one another and through time through triangulation. This project illustrated the relationship between ozone, nitrogen dioxide, and temperature. More specifically, it shows that ozone is highest in the summer when the ambient temperatures are highest and when ozone is high, nitrogen dioxide is generally low. This makes sense given that ozone is created by the combination of nitrogen dioxide, heat, and volatile organic compounds.</p>
-<p>Cluster breakdown by mean pollutant value in Adam's County, Colorado (highlighting indicating defining pollutant levels by cluster):</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/2/adams_cluster_values.png" alt="" width="372" height="147" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adams_cluster_values-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adams_cluster_values-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adams_cluster_values-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adams_cluster_values-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adams_cluster_values-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adams_cluster_values-2xl.png 1920w"></figure>
-<p>Cluster distribution in Adam's County by month:</p>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/2/adamsClusters2.png" alt="" width="810" height="458" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/2/responsive/adamsClusters2-2xl.png 1920w"></figure>
-<p>The mean pollutant values show that ozone is highest in cluster 1, when nitrogen dioxide is low. The distribution plot shows cluster 1 making up the majority of days during summer months. Then in winter, cluster 2 becomes dominant. Thus, ozone is highest in the summer when it gets hotter. When it temperatures cool off ozone levels go down and nitrogen dioxide levels are higher.</p>
-<p>Here is my R code for this project on <a href="https://github.com/mattwilliams-ds/colorado-air-pollution" title="Colorado Air Quality" target="_blank" rel="noopener noreferrer">github</a>.</p>
             ]]>
         </content>
     </entry>

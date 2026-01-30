@@ -3,7 +3,7 @@
     <title>matt williams</title>
     <link href="https://mattwilliams-ds.github.io/gh-page/feed.xml" rel="self" />
     <link href="https://mattwilliams-ds.github.io/gh-page" />
-    <updated>2026-01-30T05:58:24-07:00</updated>
+    <updated>2026-01-30T07:25:39-07:00</updated>
     <author>
         <name>Matt Williams</name>
     </author>
@@ -152,15 +152,15 @@
         <updated>2025-01-19T13:13:22-07:00</updated>
             <summary type="html">
                 <![CDATA[
-                    Concept This project sought to develop a system of rating coastal counties in the U.S. by the vulnerability of their bridge infrastructure. The scoring system developed awards one level or risk for each of the following factors: By identifying coastal counties with at risk bridge&hellip;
+                    Concept This project sought to develop a system to rate the vulnerability of bridge infrastructure by coastal counties in the U.S. The scoring system developed awards one level of risk for each of the following factors: By identifying coastal counties with at risk bridge structures,&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <p><strong>Concept</strong></p>
-<p>This project sought to develop a system of rating coastal counties in the U.S. by the vulnerability of their bridge infrastructure. The scoring system developed awards one level or risk for each of the following factors:</p>
-<figure class="post__image post__image--right"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/10/median_bridge_age-2.png" alt="Median Bridge Age" width="400" height="226" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-2xl.png 1920w"></figure>Bridge population is aging</p>
+<p>This project sought to develop a system to rate the vulnerability of bridge infrastructure by coastal counties in the U.S. The scoring system developed awards one level of risk for each of the following factors:</p>
 <ul>
+<li><figure class="post__image post__image--right"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/10/median_bridge_age-2.png" alt="Median Bridge Age" width="400" height="226" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/median_bridge_age-2-2xl.png 1920w"></figure>The bridge population within the county is aging</li>
 <li>Bridge Ratings are in decline</li>
 <li>County population is increasing (putting more demand on the bridges)</li>
 <li>Frequency of storm events that could impact structure health are increasing</li>
@@ -174,7 +174,7 @@
 </ol>
 <p><strong>Process</strong></p>
 <ol>
-<li>Clean &amp; process Bridge Inventory data in <strong>Python</strong>, filtering out non-coastal counties. Attributes of interest included bridge ratings, year of construction, and geolocation data.</li>
+<li>Clean &amp; process National Bridge Inventory data in <strong>Python</strong>, filtering out non-coastal counties. Attributes of interest included bridge ratings, year of construction, and geolocation data.</li>
 <li>Determine bridge age for all structures in cleaned dataset.</li>
 <li>Calculate average bridge rating by taking the geometric mean of the ratings for each bridge component.</li>
 <li>Calculate the rate of change of the average bridge ratings by county using a <strong>linear regressor</strong> and taking the slope as the rate of change.</li>
@@ -183,12 +183,14 @@
 <li>Clean &amp; process NCEI storm event counts, filtering out event types that are not likely to impact bridge condition (fog for example).</li>
 <li>Calculate the rate of change of storm event occurances over time using a <strong>Poisson regressor</strong> and filtering out counties with that are not significant (p-values less than 0.05).</li>
 <li>Combine average bridge age, change in average bridge rating, county population, and rate of change of storm events for each county into a single <strong>Pandas</strong> dataframe.</li>
-<li>Tally risk factors for each county and export data.</li>
-<li>Import county risk tally data into <strong>QGIS</strong> and create <strong>chloropleth maps</strong> to document findings.</li>
+<li>Total all risk factors for each county to dtermine individual vulnerability scores.</li>
+<li>Import county vulnerability score data into <strong>QGIS</strong> and create <strong>chloropleth maps</strong> to document findings.</li>
 </ol>
 <p><strong>Results</strong></p>
 <p>This study successfully rated each coastal county in the US. Ten counties were found to have a vulnerability score of four meaning that they have all for risk factors; aging infrastructure, declining infrastructure, increasing population, and increasing storm events. The following chloropleth map shows the rating for each county.</p>
-<figure class="post__image"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/10/county_vulnerability_scores.png" alt="County Vulnerability Map" width="1546" height="891" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-2xl.png 1920w"><figcaption><em>Vulnerability Scores of Coastal U.S. Counties</em></figcaption></figure>
+<figure><figure class="post__image"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/10/county_vulnerability_scores.png" alt="County Vulnerability Map" width="1546" height="891" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/10/responsive/county_vulnerability_scores-2xl.png 1920w"></figure>
+<figcaption><em>Vulnerability Scores of Coastal U.S. Counties</em></figcaption>
+</figure>
 <p>The 10 counties with a vulnerability score of four are:</p>
 <table style="border-collapse: collapse; width: 100%; height: 241.75px; border-style: none;" border="0">
 <tbody>

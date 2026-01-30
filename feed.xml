@@ -3,7 +3,7 @@
     <title>matt williams</title>
     <link href="https://mattwilliams-ds.github.io/gh-page/feed.xml" rel="self" />
     <link href="https://mattwilliams-ds.github.io/gh-page" />
-    <updated>2025-11-29T11:49:28-07:00</updated>
+    <updated>2026-01-30T05:58:24-07:00</updated>
     <author>
         <name>Matt Williams</name>
     </author>
@@ -87,7 +87,7 @@
 <p><strong>Results</strong></p>
 <p>Here is the map I created of the twenty intersections with the highest accident counts. And, yes, the intersection where my accident occured made the top twenty.</p>
 <figure class="post__image"><img loading="lazy"  src="https://mattwilliams-ds.github.io/gh-page/media/posts/12/Longmont_Crash_Density.png" alt="Crash Density Map of Longmont, Colorado" width="1166" height="1078" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-xs.png 640w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-sm.png 768w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-md.png 1024w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-lg.png 1366w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-xl.png 1600w ,https://mattwilliams-ds.github.io/gh-page/media/posts/12/responsive/Longmont_Crash_Density-2xl.png 1920w"></figure>
-<p>All of my project files can be viewe <a href="https://github.com/mattwilliams-ds/Data_Science_Projects/tree/main/longmont_accidents" title="github link" target="_blank" rel="noopener noreferrer">here on gthub</a>.</p>
+<p>All of my project files can be viewed <a href="https://github.com/mattwilliams-ds/Data_Science_Projects/tree/main/longmont_accidents" title="github link" target="_blank" rel="noopener noreferrer">here on github</a>.</p>
             ]]>
         </content>
     </entry>
